@@ -1,0 +1,17 @@
+Scenariusz gry tekstowej "Tux przeciwko niewoli Billa Gatesa. Wolność dla pingwinów!":
+
+Gracz wciela się w postać Tuxa - maskotki systemu operacyjnego Linux, która postanawia podbić kampus Microsoftu. W grze będzie można wykonywać różne zadania, zbierać przedmioty i walczyć z przeciwnikami.
+
+Rozpoczynamy grę na zewnątrz kampusu Microsoftu, gdzie Tux planuje swoje ataki. Gracz ma do dyspozycji mapę kampusu i musi wybrać, którą część atakować jako pierwszą.
+
+Po wyborze celu, Tux zaczyna swoją misję. Pierwszym zadaniem jest zdobycie kontroli nad wejściem głównym. Gracz musi przeciąć kable zasilające, aby uniemożliwić przeciwnikom w kampusie wezwanie na pomoc.
+
+Następnym zadaniem jest zdobycie dostępu do budynków na terenie kampusu. Tux musi przemknąć się niezauważenie, aby dostać się do najważniejszych sal, gdzie znajdują się komputery i serwery Microsoftu.
+
+W międzyczasie Tux musi radzić sobie z różnymi przeciwnikami, którzy stoją mu na drodze. Mogą to być ochroniarze Microsoftu, a nawet sam Bill Gates, który jest ostatnią linią obrony. Tux musi stawić czoła tym przeciwnościom, korzystając z różnych narzędzi, takich jak klawiatury do atakowania i myszy do przemieszczania się.
+
+Gdy Tux dostanie się do budynków, musi przeprogramować komputery i serwery Microsoftu. Gracz ma do dyspozycji specjalne narzędzia do hackowania, które pomagają w przechwytywaniu kontroli nad systemem operacyjnym.
+
+Ostatecznie, po zdobyciu kontroli nad wszystkimi budynkami na terenie kampusu Microsoftu, Tux zwycięża w swojej misji. Kampus zostaje podbity, a Linux staje się dominującym systemem operacyjnym w całym świecie.
+
+Koniec gry.
