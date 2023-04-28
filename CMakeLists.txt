@@ -3,4 +3,4 @@ project(Projekt_podbijanie_kampusu_microsoftu)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Projekt_podbijanie_kampusu_microsoftu main.cpp)
+add_executable(Projekt_podbijanie_kampusu_microsoftu main.cpp Game.cpp Game.h)
