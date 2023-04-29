@@ -27,7 +27,7 @@ void Game::render() {
 }
 
 void Game::initVariables() {
-
+    this->pWindow = nullptr;
 }
 
 void Game::initWindow() {
@@ -40,6 +40,7 @@ void Game::initWindow() {
 }
 
 Game::Game() {
+    this->initFonts();
     this->initVariables();
     this->initWindow();
 }
@@ -67,4 +68,8 @@ void Game::updateMousePosition() {
 
 
     this->mousePositionWindow = sf::Mouse::getPosition(*this->pWindow);
+}
+
+void Game::initFonts() {
+//    this->font.loadFromFile("Fonts/Dosis-Light.ttf");
 }

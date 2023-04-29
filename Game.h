@@ -9,6 +9,7 @@
 #include <SFML/Window.hpp>
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
+#include <SFML/Main.hpp>
 #include <vector>
 #include "Enemy.h"
 
@@ -21,6 +22,9 @@ private:
 
     //Mouse position
     sf::Vector2i mousePositionWindow;
+
+    //Resource
+//    sf::Font font;
 
     //Window
     sf::RenderWindow* pWindow;
@@ -38,6 +42,9 @@ public:
 
     //functions
     const bool isRunning() const;
+
+    //init
+    void initFonts();
 
     void updateMousePosition();
     void update();
