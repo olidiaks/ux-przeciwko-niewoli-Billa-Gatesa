@@ -43,7 +43,7 @@ int main() {
         int answer;
         std::cin >> answer;
         system("cls");
-        system("clear");
+        //system("clear");
         //Tux survive or die.
         if (*(answers + answer - 1) == correctAnswer) {
             std::cout
@@ -67,7 +67,7 @@ int main() {
     //win
     if (isWordSavedForBillGates){
         system("cls");
-        system("clear");
+        //system("clear");
         std::cout << "Brawo " << name << ", udało ci się ocalić świat przed złym wrednym Billem Gatesem.\n";
     } else{
         std::cout
