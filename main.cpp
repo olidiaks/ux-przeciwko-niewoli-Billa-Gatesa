@@ -58,7 +58,7 @@ int main() {
                 //Render
                 game.render();
             }
-            isWordSavedForBillGates = game.isTuxSurvive();
+            isWordSavedForBillGates = game.getIsTuxSurvive();
             break;
         }
     }

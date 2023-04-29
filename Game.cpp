@@ -37,3 +37,7 @@ Game::~Game() {
 const bool Game::isRunning() const {
     return this->pWindow->isOpen();
 }
+
+bool Game::getIsTuxSurvive() {
+    return this->isTuxSurvive;
+}

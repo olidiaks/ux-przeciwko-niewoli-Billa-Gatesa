@@ -61,6 +61,12 @@ build CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir/Game.cpp.o: CXX_COMPI
   OBJECT_DIR = CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir
   OBJECT_FILE_DIR = CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir
 
+build CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir/Enemy.cpp.o: CXX_COMPILER__Projekt_podbijanie_kampusu_microsoftu_Debug /home/olidiaks/Dokumenty/Szkoła$ 2022$ 2023/Programowanie$ obiektowe/Projekt$ podbijanie$ kampusu$ microsoftu/Enemy.cpp || cmake_object_order_depends_target_Projekt_podbijanie_kampusu_microsoftu
+  DEP_FILE = CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir/Enemy.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  OBJECT_DIR = CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir
+  OBJECT_FILE_DIR = CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Projekt_podbijanie_kampusu_microsoftu
@@ -69,7 +75,7 @@ build CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir/Game.cpp.o: CXX_COMPI
 #############################################
 # Link the executable Projekt_podbijanie_kampusu_microsoftu
 
-build Projekt_podbijanie_kampusu_microsoftu: CXX_EXECUTABLE_LINKER__Projekt_podbijanie_kampusu_microsoftu_Debug CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir/main.cpp.o CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir/Game.cpp.o
+build Projekt_podbijanie_kampusu_microsoftu: CXX_EXECUTABLE_LINKER__Projekt_podbijanie_kampusu_microsoftu_Debug CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir/main.cpp.o CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir/Game.cpp.o CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir/Enemy.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Projekt_podbijanie_kampusu_microsoftu.dir
   POST_BUILD = :

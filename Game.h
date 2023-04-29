@@ -9,12 +9,16 @@
 #include <SFML/Window.hpp>
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
-
+#include <vector>
+#include "Enemy.h"
 
 
 class Game{
 private:
     //Variables
+    std::vector<Enemy> microsoftCrap;
+    bool isTuxSurvive;
+
     //Window
     sf::RenderWindow* pWindow;
     sf::VideoMode videoMode;
@@ -28,14 +32,14 @@ public:
     Game();
     virtual ~Game();
 
-    //Variables
-    bool isTuxSurvive;
 
     //functions
     const bool isRunning() const;
 
     void update();
     void render();
+
+    bool getIsTuxSurvive();
 };
 
 
