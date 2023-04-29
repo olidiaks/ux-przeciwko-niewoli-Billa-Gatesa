@@ -19,6 +19,9 @@ private:
     std::vector<Enemy> microsoftCrap;
     bool isTuxSurvive;
 
+    //Mouse position
+    sf::Vector2i mousePositionWindow;
+
     //Window
     sf::RenderWindow* pWindow;
     sf::VideoMode videoMode;
@@ -36,10 +39,12 @@ public:
     //functions
     const bool isRunning() const;
 
+    void updateMousePosition();
     void update();
     void render();
 
     bool getIsTuxSurvive();
+
 };
 
 

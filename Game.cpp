@@ -5,11 +5,25 @@
 #include "Game.h"
 
 void Game::update() {
-
+    this->updateMousePosition();
 }
 
 void Game::render() {
+    /**
+        @return void
 
+        - clear old frame
+        - render objects
+        - display frame in window
+
+        Renders the game objects.
+    */
+
+    this->pWindow->clear();
+
+    //Draw game objects
+
+    this->pWindow->display();
 }
 
 void Game::initVariables() {
@@ -40,4 +54,17 @@ const bool Game::isRunning() const {
 
 bool Game::getIsTuxSurvive() {
     return this->isTuxSurvive;
+}
+
+void Game::updateMousePosition() {
+    /**
+		@ return void
+
+		Updates the mouse positions:
+		- Mouse position relative to window (Vector2i)
+	*/
+
+
+
+    this->mousePositionWindow = sf::Mouse::getPosition(*this->pWindow);
 }

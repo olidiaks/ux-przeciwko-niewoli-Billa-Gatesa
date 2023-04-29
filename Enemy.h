@@ -11,19 +11,30 @@
 class Enemy {
 private:
 
-//variables
+//private variables
     std::string name;
     double hp;
     double damage;
-    const float regeneration;
+    const double regeneration;
     std::string nameMalfunction;
+    int x;
+    int y;
 
 
 public:
-    Enemy(float regeneration);
+    //Constructor
+    Enemy(const double regeneration, double damage, double hp, int x, int y);
 
+    //Accesors
+    int getX() const;
+    int getY() const;
+
+    //public functions
     double attack();
     void gotAttacked(double receivedDamage);
+    void move(int x, int y);
+    bool isDead();
+
 };
 
 
