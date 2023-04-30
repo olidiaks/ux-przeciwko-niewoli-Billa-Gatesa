@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(Projekt_podbijanie_kampusu_microsoftu main.cpp Game.cpp Game.h Enemy.cpp Enemy.h Enemy.cpp)
 
-set(SFML_STATIC_LIBRARIES TRUE)
+set(SFML_STATIC_LIBRARIES FALSE)
 set(SFML_DIR SFML/lib/cmake/SFML)
 find_package(SFML COMPONENTS system window graphics audio network REQUIRED)
 
