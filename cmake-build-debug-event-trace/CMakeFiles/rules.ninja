@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/olidiaks/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S"/home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu" -B"/home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace"
+  command = /home/olidiaks/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S"/home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu" -B"/home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace"
   description = Re-running CMake...
   generator = 1
 
@@ -51,7 +51,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = /home/olidiaks/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/ninja/linux/x64/ninja $FILE_ARG -t clean $TARGETS
+  command = /home/olidiaks/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/ninja/linux/x64/ninja $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -59,6 +59,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = /home/olidiaks/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/ninja/linux/x64/ninja -t targets
+  command = /home/olidiaks/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/ninja/linux/x64/ninja -t targets
   description = All primary targets available:
 

@@ -1,33 +1,11 @@
-/home/olidiaks/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/olidiaks/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/ninja/linux/x64/ninja -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ null --profiling-format=google-trace --profiling-output=CMakeFiles/clion-event-trace.json -G Ninja -S "/home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu" -B "/home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace"
+/home/olidiaks/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/olidiaks/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/ninja/linux/x64/ninja -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ null --profiling-format=google-trace --profiling-output=CMakeFiles/clion-event-trace.json -G Ninja -S "/home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu" -B "/home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace"
 CMake Warning:
   Ignoring extra path from command line:
 
    "/home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace/null"
 
 
-CMake Error at SFML/lib/cmake/SFML/SFMLConfigDependencies.cmake:38 (set_property):
-  set_property could not find TARGET X11.  Perhaps it has not yet been
-  created.
-Call Stack (most recent call first):
-  SFML/lib/cmake/SFML/SFMLConfigDependencies.cmake:48 (sfml_bind_dependency)
-  SFML/lib/cmake/SFML/SFMLConfig.cmake:117 (include)
-  CMakeLists.txt:10 (find_package)
-
-
-CMake Error at SFML/lib/cmake/SFML/SFMLConfig.cmake:139 (message):
-  SFML found but some of its dependencies are missing ( Xrandr UDev)
-Call Stack (most recent call first):
-  CMakeLists.txt:10 (find_package)
-
-
-CMake Error at CMakeLists.txt:10 (find_package):
-  Found package configuration file:
-
-    /home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/SFML/lib/cmake/SFML/SFMLConfig.cmake
-
-  but it set SFML_FOUND to FALSE so package "SFML" is considered to be NOT
-  FOUND.
-
-
--- Configuring incomplete, errors occurred!
-See also "/home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace/CMakeFiles/CMakeOutput.log".
+-- Found SFML 2.5.1 in /usr/lib64/cmake/SFML
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace

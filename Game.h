@@ -1,58 +1,79 @@
 //
-// Created by olidiaks on 28.04.23.
+// Created by olidiaks on 02.05.23.
 //
 
-#ifndef PROJEKT_PODBIJANIE_KAMPUSU_MICROSOFTU_GAME_H
-#define PROJEKT_PODBIJANIE_KAMPUSU_MICROSOFTU_GAME_H
-#include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/Audio.hpp>
-#include <SFML/Network.hpp>
-#include <SFML/Main.hpp>
+
+#ifndef C_____SFML___GRAD_2_GAME_H
+#define C_____SFML___GRAD_2_GAME_H
+
+
+#include "Player.h"
+#include "SwagBall.h"
 #include <vector>
-#include "Enemy.h"
 
-
-class Game{
+class Game {
 private:
+    //Win
+    bool isWin;
+
     //Variables
-    std::vector<Enemy> microsoftCrap;
-    bool isTuxSurvive;
-
-    //Mouse position
-    sf::Vector2i mousePositionWindow;
-
-    //Resource
-//    sf::Font font;
-
-    //Window
-    sf::RenderWindow* pWindow;
     sf::VideoMode videoMode;
-    sf::Event event;
+    sf::RenderWindow* window;
+    sf::Event sfEvent;
 
-    //functions
+    //player
+    Player player;
+
+    int points;
+    int pointsMax;
+
+    sf::Font font;
+    sf::Text guiText;
+
+    //SwagBalls
+    std::vector<SwagBall> swagBalls;
+    float spawnTimerMax;
+    float spawnTimer;
+    int maxSwagBalls;
+
+    //Init
     void initVariables();
     void initWindow();
+    void initPlayer();
+    void initFonts();
+    void initText();
 
 public:
+
+//Constructors
     Game();
-    virtual ~Game();
+//Deconstructions
+    ~Game();
 
 
-    //functions
-    const bool isRunning() const;
+    //Accessors
+    const bool running() const;
+    const bool getIsWin() const;
 
-    //init
-    void initFonts();
+    //Modifiers
 
-    void updateMousePosition();
+    //Functions
+    void pollEvents();
+
+    void spawnSwagBalls();
+
+    //update
+    void updateGui();
+    void updateCollision();
+    void updateWin();
     void update();
-    void render();
 
-    bool getIsTuxSurvive();
+    //render
+    void renderSwagBalls();
+    void renderGui(sf::RenderTarget* target);
+    void render();
 
 };
 
 
-#endif //PROJEKT_PODBIJANIE_KAMPUSU_MICROSOFTU_GAME_H
+#endif //C_____SFML___GRAD_2_GAME_H

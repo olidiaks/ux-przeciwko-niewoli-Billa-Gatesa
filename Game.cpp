@@ -1,75 +1,150 @@
 //
-// Created by olidiaks on 28.04.23.
+// Created by olidiaks on 02.05.23.
 //
 
+#include <bits/sockaddr.h>
 #include "Game.h"
+#include <iostream>
+#include <sstream>
+#include <math.h>
 
-void Game::update() {
-    this->updateMousePosition();
+
+//Constructors
+Game::Game() {
+    this->initVariables();
+    this->initWindow();
+    this->initPlayer();
+    this->initFonts();
+    this->initText();
 }
 
-void Game::render() {
-    /**
-        @return void
-
-        - clear old frame
-        - render objects
-        - display frame in window
-
-        Renders the game objects.
-    */
-
-    this->pWindow->clear();
-
-    //Draw game objects
-
-    this->pWindow->display();
+//Deconstructions
+Game::~Game() {
+    delete this->window;
 }
 
 void Game::initVariables() {
-    this->pWindow = nullptr;
+    this->isWin = false;
+    this->points = 0;
+    this->pointsMax = rand() % 8000 + 2000;
+    this->spawnTimerMax = 10.f;
+    this->spawnTimer = this->spawnTimerMax;
+    this->maxSwagBalls = rand() % 50 + 5;
 }
 
 void Game::initWindow() {
-    this->videoMode.height = 600;
-    this->videoMode.width = 800;
-
-    this->pWindow = new sf::RenderWindow(this->videoMode, "Game 1", sf::Style::Titlebar | sf::Style::Close);
-
-    this->pWindow->setFramerateLimit(60);
+    this->videoMode = sf::VideoMode(800, 600);
+    this->window = new sf::RenderWindow(this->videoMode, "Game 2", sf::Style::Close | sf::Style::Titlebar);
+    this->window->setFramerateLimit(60);
 }
 
-Game::Game() {
-    this->initFonts();
-    this->initVariables();
-    this->initWindow();
+const bool Game::running() const {
+    bool isPlayerLive = this->player.getHp() >= 0;
+    return this->window->isOpen() && isPlayerLive && !isWin;
 }
 
-Game::~Game() {
-    delete this->pWindow;
+void Game::pollEvents() {
+    while (this->window->pollEvent(this->sfEvent)) {
+        switch (this->sfEvent.type) {
+            case sf::Event::Closed:
+                this->window->close();
+                break;
+            case sf::Event::KeyPressed:
+                switch (sfEvent.key.code) {
+                    case sf::Keyboard::Escape:
+                        this->window->close();
+                        break;
+                }
+                break;
+        }
+    }
 }
 
-const bool Game::isRunning() const {
-    return this->pWindow->isOpen();
+void Game::render() {
+    this->window->clear();
+
+    //Render stuff
+    this->renderSwagBalls();
+    this->player.render(this->window);
+    this->renderGui(this->window);
+
+    this->window->display();
 }
 
-bool Game::getIsTuxSurvive() {
-    return this->isTuxSurvive;
+void Game::update() {
+    this->pollEvents();
+    this->spawnSwagBalls();
+    this->player.update(this->window);
+    this->updateCollision();
+    this->updateGui();
+    this->updateWin();
 }
 
-void Game::updateMousePosition() {
-    /**
-		@ return void
+void Game::spawnSwagBalls() {
+    if (this->swagBalls.size() < this->maxSwagBalls) {
+        //Timer
+        if (this->spawnTimer >= this->spawnTimerMax) {
+            int points = rand() % (this->pointsMax / 60);
+            double hp = (double)(rand() % (int)(round(this->player.getHpMax() * 1.5) * 1000)) / 1000 - (double)this->player.getHpMax();
+            this->swagBalls.push_back(SwagBall(*this->window, hp, points));
+            this->spawnTimer = 0.f;
+        } else {
+            this->spawnTimer += 1.f;
+        }
+    }
+}
 
-		Updates the mouse positions:
-		- Mouse position relative to window (Vector2i)
-	*/
+void Game::renderSwagBalls() {
+    for (auto item: this->swagBalls) {
+        item.render(*this->window);
+    }
+}
 
-
-
-    this->mousePositionWindow = sf::Mouse::getPosition(*this->pWindow);
+void Game::updateCollision() {
+    //Check the collision
+    int j = 0;
+    for (auto i: this->swagBalls) {
+        if (this->player.getShape().getGlobalBounds().intersects(i.getShape().getGlobalBounds())) {
+            this->player.addHp(i.getHp());
+            this->points += i.getPoints();
+            this->swagBalls.erase(this->swagBalls.begin() + j);
+        }
+        j++;
+    }
 }
 
 void Game::initFonts() {
-//    this->font.loadFromFile("Fonts/Dosis-Light.ttf");
+    if (!this->font.loadFromFile("./fonts/PixellettersFull.ttf")) {
+        std::cerr << "ERROR::GAME::INITFONT::Could not load PixellettersFull.ttf\n";
+    }
+}
+
+void Game::initText() {
+    this->guiText.setFont(this->font);
+    this->guiText.setString("Wiktor jest fajnym bratem.");
+}
+
+void Game::renderGui(sf::RenderTarget *target) {
+    target->draw(this->guiText);
+}
+
+void Game::updateGui() {
+    std::stringstream stringStream;
+    stringStream << "Punkty: " << this->points << "/" << this->pointsMax << "\nHp: " << this->player.getHp() << "/"
+                 << this->player.getHpMax();
+    this->guiText.setString(stringStream.str());
+}
+
+void Game::initPlayer() {
+    const float x = rand() % this->window->getSize().x + 100;
+    const float y = rand() % this->window->getSize().y + 100;
+    this->player = Player(x, y);
+}
+
+void Game::updateWin() {
+    this->isWin = this->points >= this->pointsMax;
+}
+
+const bool Game::getIsWin() const {
+    return this->isWin;
 }
