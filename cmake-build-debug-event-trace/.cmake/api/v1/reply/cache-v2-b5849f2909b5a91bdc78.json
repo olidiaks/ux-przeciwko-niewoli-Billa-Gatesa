@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/olidiaks/Dokumenty/Szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace"
+			"value" : "/home/olidiaks/Dokumenty/szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -151,11 +151,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : "/usr/bin/g++"
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/c++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -279,11 +279,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : "/usr/bin/gcc"
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/cc"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/olidiaks/Dokumenty/Szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace/CMakeFiles/pkgRedirects"
+			"value" : "/home/olidiaks/Dokumenty/szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/olidiaks/Dokumenty/Szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu"
+			"value" : "/home/olidiaks/Dokumenty/szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/olidiaks/Dokumenty/Szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace"
+			"value" : "/home/olidiaks/Dokumenty/szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace"
 		},
 		{
 			"name" : "Projekt_podbijanie_kampusu_microsoftu_IS_TOP_LEVEL",
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/olidiaks/Dokumenty/Szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu"
+			"value" : "/home/olidiaks/Dokumenty/szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu"
 		},
 		{
 			"name" : "SFML_DIR",
@@ -1171,7 +1171,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/lib64/cmake/SFML"
+			"value" : "/usr/lib/cmake/SFML"
 		},
 		{
 			"name" : "SFML_DOC_DIR",

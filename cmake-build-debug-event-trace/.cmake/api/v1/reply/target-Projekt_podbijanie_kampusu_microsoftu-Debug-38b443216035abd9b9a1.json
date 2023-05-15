@@ -59,7 +59,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/olidiaks/Dokumenty/Szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/SFML/include"
+					"path" : "/home/olidiaks/Dokumenty/szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/SFML/include"
 				}
 			],
 			"language" : "CXX",
@@ -73,7 +73,10 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3
 			]
 		}
 	],
@@ -92,27 +95,27 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/lib64/libsfml-network.so.2.5.1",
+				"fragment" : "/usr/lib/libsfml-network.so.2.5.1",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/lib64/libsfml-graphics.so.2.5.1",
+				"fragment" : "/usr/lib/libsfml-graphics.so.2.5.1",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/lib64/libsfml-audio.so.2.5.1",
+				"fragment" : "/usr/lib/libsfml-audio.so.2.5.1",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/lib64/libsfml-window.so.2.5.1",
+				"fragment" : "/usr/lib/libsfml-window.so.2.5.1",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/lib64/libsfml-system.so.2.5.1",
+				"fragment" : "/usr/lib/libsfml-system.so.2.5.1",
 				"role" : "libraries"
 			}
 		],
@@ -131,7 +134,10 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3
 			]
 		}
 	],
@@ -141,6 +147,24 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Game.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Player.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "SwagBall.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

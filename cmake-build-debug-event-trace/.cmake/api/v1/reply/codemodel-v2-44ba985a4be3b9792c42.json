@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Projekt_podbijanie_kampusu_microsoftu::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Projekt_podbijanie_kampusu_microsoftu-Debug-19b1279a32ee539f8024.json",
+					"jsonFile" : "target-Projekt_podbijanie_kampusu_microsoftu-Debug-38b443216035abd9b9a1.json",
 					"name" : "Projekt_podbijanie_kampusu_microsoftu",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/olidiaks/Dokumenty/Szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace",
-		"source" : "/home/olidiaks/Dokumenty/Szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu"
+		"build" : "/home/olidiaks/Dokumenty/szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace",
+		"source" : "/home/olidiaks/Dokumenty/szko\u0142a 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu"
 	},
 	"version" : 
 	{

@@ -37,7 +37,7 @@ int main() {
         std::getline(stringStream, *(pAnswers + 3), ';');
         std::getline(stringStream, correctAnswer, ';');
         std::cout << questionId << ". " << question << "\n1) " << *answers << "\n2) " << *(answers + 1) << "\n3) "
-                  << *(pAnswers + 2) << "\n4)" << *(pAnswers + 3);
+                  << *(pAnswers + 2) << "\n4) " << *(pAnswers + 3);
 
         //catch answer
         int answer;
@@ -50,7 +50,7 @@ int main() {
                     << " udał ci się poprawnie odpowiedzieć nadal żyjesz. Do zobaczenia w kolejnej rundzie\n\n\n\n";
         } else {
             Game game;
-            while (game.isRunning()){
+            while (game.running()){
 
                 //Update
                 game.update();
@@ -58,7 +58,7 @@ int main() {
                 //Render
                 game.render();
             }
-            isWordSavedForBillGates = game.getIsTuxSurvive();
+            isWordSavedForBillGates = game.getIsWin();
             break;
         }
     }

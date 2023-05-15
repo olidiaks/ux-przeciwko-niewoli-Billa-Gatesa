@@ -1,4 +1,4 @@
-# Install script for directory: /home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu
+# Install script for directory: /home/olidiaks/Dokumenty/szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/olidiaks/Dokumenty/Szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/olidiaks/Dokumenty/szkoła 2022 2023/Programowanie obiektowe/Projekt podbijanie kampusu microsoftu/cmake-build-debug-event-trace/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
