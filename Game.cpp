@@ -39,8 +39,8 @@ void Game::initWindow() {
 }
 
 const bool Game::running() const {
-    bool isPlayerLive = this->player.getHp() >= 0;
-    return this->window->isOpen() && isPlayerLive && !isWin;
+    bool isPlayerLive = this->player.getHp() > 0;
+    return this->window->isOpen() && isPlayerLive && !this->isWin;
 }
 
 void Game::pollEvents() {

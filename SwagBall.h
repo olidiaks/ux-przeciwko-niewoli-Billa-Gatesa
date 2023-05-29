@@ -19,9 +19,8 @@ private:
     int points;
 
 
-
     //Functions
-    void initShape(const sf::RenderWindow& window);
+    void initShape(const sf::RenderWindow &window);
 
 public:
     SwagBall(const sf::RenderWindow &window, const double hp, const int points);
@@ -32,7 +31,9 @@ public:
 
     //Accessors
     const sf::CircleShape getShape() const;
+
     const int getPoints() const;
+
     const double getHp() const;
 
 
@@ -41,7 +42,7 @@ public:
     void update();
 
     //Render
-    void render(sf::RenderTarget& target);
+    void render(sf::RenderTarget &target);
 };
 
 
