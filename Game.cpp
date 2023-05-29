@@ -121,7 +121,7 @@ void Game::initFonts() {
 
 void Game::initText() {
     this->guiText.setFont(this->font);
-    this->guiText.setString("Wiktor jest fajnym bratem.");
+    this->guiText.setString("Test działania czy tekst się nam wyświetla.\n Oczywiście wszystko działa jak mógł by nie działać.");
 }
 
 void Game::renderGui(sf::RenderTarget *target) {

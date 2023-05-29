@@ -37,13 +37,13 @@ int main() {
         std::getline(stringStream, *(pAnswers + 3), ';');
         std::getline(stringStream, correctAnswer, ';');
         std::cout << questionId << ". " << question << "\n1) " << *answers << "\n2) " << *(answers + 1) << "\n3) "
-                  << *(pAnswers + 2) << "\n4) " << *(pAnswers + 3);
+                  << *(pAnswers + 2) << "\n4) " << *(pAnswers + 3) << "\n";
 
         //catch answer
         int answer;
         std::cin >> answer;
         system("cls");
-        //system("clear");
+        system("clear");
         //Tux survive or die.
         if (*(answers + answer - 1) == correctAnswer) {
             std::cout
@@ -67,11 +67,11 @@ int main() {
     //win
     if (isWordSavedForBillGates){
         system("cls");
-        //system("clear");
+        system("clear");
         std::cout << "Brawo " << name << ", udało ci się ocalić świat przed złym wrednym Billem Gatesem.\n";
     } else{
         std::cout
-                << "Jak by to delikatnie powiedzieć?\nO już wiem.\nTux przestał przypominać siebie!\nDoprowadziłeś do jego śmierci.\nRuch oporu przeciwko Bilowi Gatesowi i jego planom na zniewolenie świata. Upadł, ponieważ zabiłeś jego przywódcę\nTeraz nik go już nie powstrzyma wszyscy skończymy jako jego niewolnicy.";
+                << "Jak by to delikatnie powiedzieć?\nJuż wiem.\nTux przestał przypominać siebie!\nDoprowadziłeś do jego śmierci.\nRuch oporu przeciwko Bilowi Gatesowi i jego planom na zniewolenie świata. Upadł, ponieważ zabiłeś jego przywódcę\nTeraz nikt go już nie powstrzyma wszyscy skończymy jako jego niewolnicy.";
     }
     return 0;
 }

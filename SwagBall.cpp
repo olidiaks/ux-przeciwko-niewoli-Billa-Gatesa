@@ -10,6 +10,11 @@ void SwagBall::initShape(const sf::RenderWindow &window) {
     sf::Color color(rand() % 255 + 1, rand() % 255 + 1, rand() % 255 + 1);
     this->shape.setFillColor(color);
 
+    sf::Color borderColor(this->hp >= 0 ? sf::Color::Green : sf::Color::Red);
+    this->shape.setOutlineColor(borderColor);
+
+    this->shape.setOutlineThickness(5.0f);
+
     float x = rand() % window.getSize().x - this->shape.getGlobalBounds().width;
     float y = rand() % window.getSize().y - this->shape.getGlobalBounds().height;
     x = x < 0 ? 0 : x;
